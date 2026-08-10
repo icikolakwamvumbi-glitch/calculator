@@ -1,0 +1,156 @@
+/* ===========================
+   Metallic Silver Blue Theme
+   =========================== */
+
+body {
+    margin: 0;
+    padding: 40px;
+    background: linear-gradient(to bottom, #1b2b3d, #0d1520);
+    font-family: "Segoe UI", Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Calculator */
+
+table {
+    border-collapse: separate;
+    border-spacing: 8px;
+    padding: 20px;
+    background: linear-gradient(145deg, #d9e3ea, #9faebd);
+    border: 2px solid #6d7c8d;
+    border-radius: 20px;
+
+    box-shadow:
+        inset 0 2px 2px rgba(255,255,255,0.7),
+        inset 0 -3px 6px rgba(0,0,0,0.3),
+        0 12px 30px rgba(0,0,0,0.5);
+}
+
+/* Display */
+
+tr:first-child td {
+    height: 70px;
+    background: linear-gradient(to bottom, #eef7ff, #c8d8e8);
+    border: 2px inset #8ba2b8;
+    border-radius: 10px;
+
+    text-align: right;
+    padding-right: 15px;
+
+    font-size: 36px;
+    font-weight: bold;
+    color: #163b5d;
+
+    box-shadow: inset 0 2px 6px rgba(0,0,0,.2);
+}
+
+/* Cells */
+
+td {
+    text-align: center;
+}
+
+/* Buttons */
+
+button {
+    width: 70px;
+    height: 60px;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    color: #143d63;
+
+    border: 1px solid #6f8395;
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    background: linear-gradient(
+        to bottom,
+        #ffffff 0%,
+        #dde8f0 45%,
+        #b9c9d8 50%,
+        #dfeaf4 100%
+    );
+
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.9),
+        inset 0 -2px 3px rgba(0,0,0,.15),
+        0 4px 6px rgba(0,0,0,.25);
+
+    transition: all .15s ease;
+}
+
+/* Hover */
+
+button:hover {
+    background: linear-gradient(
+        to bottom,
+        #ffffff,
+        #d5e7f9,
+        #9ec3e8
+    );
+
+    color: #0b5ea8;
+}
+
+/* Pressed */
+
+button:active {
+    transform: translateY(2px);
+
+    box-shadow:
+        inset 0 3px 6px rgba(0,0,0,.35);
+
+    background: linear-gradient(
+        to bottom,
+        #aab8c5,
+        #d9e4ed
+    );
+}
+
+/* Equal button */
+
+tr:last-child td:last-child button {
+    background: linear-gradient(
+        to bottom,
+        #5ea8ff,
+        #2f74d0
+    );
+
+    color: white;
+
+    border: 1px solid #255eaa;
+}
+
+tr:last-child td:last-child button:hover {
+    background: linear-gradient(
+        to bottom,
+        #79b8ff,
+        #4489ea
+    );
+}
+
+/* Operator buttons */
+
+tr:nth-child(2) button,
+tr:nth-child(3) button,
+tr:nth-child(4) td:last-child button,
+tr:nth-child(5) td:last-child button,
+tr:nth-child(6) td:last-child button {
+    background: linear-gradient(
+        to bottom,
+        #dfe7ee,
+        #b6c4d2
+    );
+}
+
+/* Rounded calculator corners */
+
+table tr:first-child td {
+    border-radius: 12px;
+}
